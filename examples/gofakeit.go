@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/4eek/gofaker"
+	"github.com/4eek/gofaker/name"
 	"time"
 )
 

@@ -17,8 +17,6 @@ or
 
 ## Usage
 
-***Note: You will need to put the data files (firstnames.txt, lastnames.txt, etc.) in the folder you use gofaker.***
-
     import "github.com/4eek/gofaker"
 
 ###Names:
@@ -41,10 +39,14 @@ Just the tests...
 
     go test -test.bench=.
 
+## Performance
+
+    10000 Usernames generated in 19.675ms (0.019675)
+
 ## Examples
 
     cd examples
-    go run gofaker.go
+    go run gofakeit.go
 
 ## Contributors
 
