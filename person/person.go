@@ -1,4 +1,4 @@
-package gofaker
+package person
 
 import (
 	"fmt"
@@ -352,7 +352,7 @@ var (
 	suffix []string = []string{"Jr", "Sr", "I", "II", "III", "IV", "V", "MD", "DDS", "PhD", "DVM"}
 )
 
-func Name() string {
+func FullName() string {
 	switch rand.Intn(10) {
 	case 0:
 		return fmt.Sprintf("%v %v %v", Prefix(), FirstName(), LastName())
