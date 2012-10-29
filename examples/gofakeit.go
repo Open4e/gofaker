@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/4eek/gofaker/lorem"
 	"github.com/4eek/gofaker/person"
 	"time"
 )
@@ -22,4 +23,12 @@ func main() {
 	}
 	t1 = time.Now()
 	fmt.Printf("\n%v Usernames generated in %v (%v)\n", num, t1.Sub(t0), t1.Sub(t0).Seconds())
+
+	fmt.Printf("\n%v\n", lorem.Word())
+	fmt.Printf("\n%v\n", lorem.Words(1))
+	fmt.Printf("\n%v\n", lorem.Words(5))
+	fmt.Printf("\n%v\n", lorem.Sentence(10))
+	fmt.Printf("\n%v\n", lorem.Sentences(10))
+	fmt.Printf("\n%v\n", lorem.Paragraph(10))
+	fmt.Printf("\n\n\n%v\n", lorem.Paragraphs(3))
 }
