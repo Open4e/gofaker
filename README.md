@@ -1,4 +1,4 @@
-# gofaker
+# gofaker [![Build Status](https://drone.io/github.com/4eek/gofaker/status.png)](https://drone.io/github.com/4eek/gofaker/latest)
 
 A port of Perl's Data::Faker library that generates fake data.
 Heavily inspired by https://github.com/EmmanuelOga/ffaker and https://github.com/fzaninotto/Faker
