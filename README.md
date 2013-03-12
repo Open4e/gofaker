@@ -1,8 +1,9 @@
 # gofaker
 
 A port of Perl's Data::Faker library that generates fake data.
+Heavily inspired by https://github.com/EmmanuelOga/ffaker and https://github.com/fzaninotto/Faker
 
-***Note: I have only just started working on this (driven by some work requirements). Only the names stuff is implemented so far.***
+***Note: I have only just started working on this (driven by some work requirements). Only the names and lorem stuff is implemented so far.***
 
 ## Installation
 
@@ -17,15 +18,49 @@ or
 
 ## Usage
 
-    import "github.com/4eek/gofaker"
+    import "github.com/4eek/gofaker/person"
+    import "github.com/4eek/gofaker/lorem"
 
 ###Names:
 
-    gofaker.Name()      // Kevin Fourie
-    gofaker.FirstName() // John
-    gofaker.LastName()  // Smith
-    gofaker.Prefix()    // Miss
-    gofaker.LastName()  // PhD
+    person.FullName()  // Kevin Fourie
+    person.FirstName() // John
+    person.LastName()  // Smith
+    person.Prefix()    // Miss
+    person.LastName()  // PhD
+
+###Lorem:
+
+    lorem.Word()
+    // culpa
+    lorem.Words(5)
+    // autem sint sit quo aspernatur
+    lorem.Sentence(10)
+    // Eum culpa neque iste modi aut adipisci ipsam quam rem. 
+    lorem.Sentences(10)
+    // Omnis pariatur commodi voluptatum aliquid animi. Sunt qui asperiores quia nemo nesciunt. Iste dict
+    // a aperiam numquam natus ea. Nemo qui et earum quibusdam sit. Molestiae eius accusantium repellat v
+    // eritatis vero. Commodi commodi rem accusantium qui deserunt. Sint ea minima consectetur eius aliqu
+    // am. Exercitationem et voluptatibus ut voluptatem quia. A accusamus fugit exercitationem dolor quo.
+    //  Laboriosam earum sint quis debitis est.
+    lorem.Paragraph(10)
+    // Dolorum eos omnis sed possimus impedit. Odit nihil veniam eos blanditiis molestiae. Ratione ex per
+    // ferendis mollitia reiciendis eum. Voluptate neque tenetur temporibus et sit. Quos rerum qui exerci
+    // tationem quo repellat. Voluptatem magnam repudiandae repellendus blanditiis esse. Nihil similique 
+    // consequatur est aliquam accusantium. Non reiciendis dolor et voluptas hic. Asperiores rerum provid
+    // ent expedita esse dignissimos. Et aut et quis voluptatem aut.
+    lorem.Paragraphs(3)
+    // Quisquam fugit quia et corrupti sed. Perferendis sunt autem totam delectus rem. Totam reprehenderi
+    // t occaecati quo omnis incidunt. Dolorum et expedita eos nihil reiciendis. Quia voluptas ad quas te
+    // mporibus velit. Error natus qui vel deleniti quis.
+    //
+    // Quod quidem neque exercitationem nostrum recusandae. Est dignissimos nulla possimus qui impedit. N
+    // ihil corrupti quo aspernatur rerum deserunt. Minus eos suscipit repudiandae facilis nostrum. Volup
+    // tates autem nobis et perspiciatis facilis. Qui facere quos veritatis repellendus dolorem.
+    //
+    // Facilis voluptates odio id alias et. Corporis quas aspernatur nobis dolorem cumque. Voluptatem vit
+    // ae ut quia qui eius. Et quo tenetur hic magni blanditiis. Vel impedit et nihil numquam veritatis. 
+    // Quia soluta et aut error ab.
 
 More coming soon.
 
