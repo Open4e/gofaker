@@ -1,13 +1,13 @@
 package person
 
-type PersonData struct {
+type Data struct {
 	prefixes   []string
 	firstNames []string
 	lastNames  []string
 	suffixes   []string
 }
 
-func (pd *PersonData) Populate(locale string) {
+func (pd *Data) Populate(locale string) {
 	if locale == "" {
 		pd.prefixes = prefixes
 		pd.firstNames = firstNames
@@ -17,7 +17,7 @@ func (pd *PersonData) Populate(locale string) {
 }
 
 var (
-	firstNames []string = []string{"Aaliyah", "Aaron", "Abagail", "Abbey", "Abbie", "Abbigail", "Abby", "Abdiel", "Abdul",
+	firstNames = []string{"Aaliyah", "Aaron", "Abagail", "Abbey", "Abbie", "Abbigail", "Abby", "Abdiel", "Abdul",
 		"Abdullah", "Abe", "Abel", "Abelardo", "Abigail", "Abigale", "Abigayle", "Abner", "Abraham", "Ada", "Adah",
 		"Adalberto", "Adaline", "Adam", "Adan", "Addie", "Addison", "Adela", "Adelbert", "Adele", "Adelia",
 		"Adeline", "Adell", "Adella", "Adelle", "Aditya", "Adolf", "Adolfo", "Adolph", "Adolphus", "Adonis",
@@ -306,7 +306,7 @@ var (
 		"Zachery", "Zack", "Zackary", "Zackery", "Zakary", "Zander", "Zane", "Zaria", "Zechariah", "Zelda", "Zella",
 		"Zelma", "Zena", "Zetta", "Zion", "Zita", "Zoe", "Zoey", "Zoie", "Zoila", "Zola", "Zora", "Zula"}
 
-	lastNames []string = []string{"Abbott", "Abernathy", "Abshire", "Adams", "Altenwerth", "Anderson",
+	lastNames = []string{"Abbott", "Abernathy", "Abshire", "Adams", "Altenwerth", "Anderson",
 		"Ankunding", "Armstrong", "Auer", "Aufderhar", "Bahringer", "Bailey", "Balistreri", "Barrows",
 		"Bartell", "Bartoletti", "Barton", "Bashirian", "Batz", "Bauch", "Baumbach", "Bayer", "Beahan", "Beatty",
 		"Bechtelar", "Becker", "Bednar", "Beer", "Beier", "Berge", "Bergnaum", "Bergstrom", "Bernhard",
@@ -357,7 +357,7 @@ var (
 		"Witting", "Wiza", "Wolf", "Wolff", "Wuckert", "Wunsch", "Wyman", "Yost", "Yundt", "Zboncak", "Zemlak",
 		"Ziemann", "Zieme", "Zulauf"}
 
-	prefixes []string = []string{"Mr", "Mrs", "Ms", "Miss", "Dr"}
+	prefixes = []string{"Mr", "Mrs", "Ms", "Miss", "Dr"}
 
-	suffixes []string = []string{"Jr", "Sr", "I", "II", "III", "IV", "V", "MD", "DDS", "PhD", "DVM"}
+	suffixes = []string{"Jr", "Sr", "I", "II", "III", "IV", "V", "MD", "DDS", "PhD", "DVM"}
 )

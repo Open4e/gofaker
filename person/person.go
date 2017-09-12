@@ -30,7 +30,7 @@ type Namer interface {
 }
 
 type Person struct {
-	Data PersonData
+	Data Data
 }
 
 func FullName(p Namer) string {
@@ -44,7 +44,6 @@ func FullName(p Namer) string {
 	default:
 		return fmt.Sprintf("%v %v", p.FirstName(), p.LastName())
 	}
-	return ""
 }
 
 func (p Person) FirstName() string {
