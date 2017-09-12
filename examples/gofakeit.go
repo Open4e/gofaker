@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
+	"time"
+
 	"github.com/4eek/gofaker/lorem"
 	"github.com/4eek/gofaker/person"
-	"time"
 )
 
 func main() {

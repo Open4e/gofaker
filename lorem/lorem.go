@@ -53,6 +53,7 @@ func Words(numWords int) (words string) {
 	if numWords < 1 {
 		return ""
 	}
+
 	words = Word()
 	for i := 1; i < numWords; i++ {
 		words = words + " " + Word()
