@@ -1,3 +1,6 @@
+> # PLEASE NOTE: Incomplete and unmaintained.
+> Should you want to revive this project please message me (@4eek).
+
 # gofaker [![Build Status](https://travis-ci.org/4eek/gofaker.svg?branch=master)](https://travis-ci.org/4eek/gofaker) [![Build Status](https://drone.io/github.com/4eek/gofaker/status.png)](https://drone.io/github.com/4eek/gofaker/latest) [![Coverage Status](https://coveralls.io/repos/4eek/gofaker/badge.svg)](https://coveralls.io/r/4eek/gofaker)
 
 A port of Perl's Data::Faker library that generates fake data.
